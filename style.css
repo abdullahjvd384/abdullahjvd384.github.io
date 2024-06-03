@@ -1056,7 +1056,7 @@ footer .wrapper { text-align: center; }
     border: none;
     background: var(--action-primary);
     display: block;
-    width: 180%;
+    width: 80%;
     padding: 0.5rem 1rem;
     font: inherit;
     color: var(--foreground-secondary);
