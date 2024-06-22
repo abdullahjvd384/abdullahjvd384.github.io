@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//www.topcreativeformat.com/194f87d10a5ec7380b8c07b296cf8b18/invoke.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+     crossorigin="anonymous"></script>
+    <title>How to Use Data Structures in Competitive Programming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #22d41f;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        article {
+            margin-bottom: 2rem;
+        }
+        article h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #000;
+            color: #ff5555;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        article img {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #554949;
+            color: #f80505;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: large;
+        }
+        footer {
+            background: #7ac07c;
+            color: #333;
+            text-shadow: #000;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="color: #fff;"><a href="https://abdullahjvd384.github.io/">View Blogs</a></h2>
+        <h1>How to Use Data Structures in Competitive Programming</h1>
+    </header>
+    <section>
+        <article>
+            <img src="https://i.ytimg.com/vi/Qmt0QwzEmh0/maxresdefault.jpg">
+            <h2>Introduction</h2>
+            <p>Competitive programming is a thrilling blend of problem-solving, algorithms, and data structures. Data structures are fundamental tools that allow us to store and organize data efficiently. In this blog, we'll explore the most commonly used data structures in competitive programming and how they can help you solve problems effectively.</p>
+        </article>
+        <article>
+            <h2>1. Arrays</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/C-Arrays.jpg" alt="Arrays">
+            <p>Arrays are the simplest and most commonly used data structure. They store elements in a contiguous block of memory. You can access any element in constant time <code>O(1)</code>, making arrays ideal for problems where you need fast read/write access.</p>
+            <h3>Example Problem: Finding the maximum element in an array.</h3>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int arr[] = {2, 5, 1, 8, 3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int maxElement = arr[0];
+
+    for (int i = 1; i &lt; n; ++i) {
+        if (arr[i] &gt; maxElement) {
+            maxElement = arr[i];
+        }
+    }
+
+    cout &lt;&lt; "Maximum Element: " &lt;&lt; maxElement &lt;&lt; endl;
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>2. Linked Lists</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220712172013/Singlelinkedlist.png" alt="Arrays">
+            <p>A linked list consists of nodes where each node contains a data field and a reference to the next node. Linked lists are useful when you need to dynamically manage data, especially when the size of the data set can change frequently.</p>
+            <h3>Example Problem: Inserting an element at the beginning of a linked list.</h3>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+};
+
+void push(Node** head_ref, int new_data) {
+    Node* new_node = new Node();
+    new_node->data = new_data;
+    new_node->next = *head_ref;
+    *head_ref = new_node;
+}
+
+void printList(Node* node) {
+    while (node != NULL) {
+        cout &lt;&lt; node->data &lt;&lt; " ";
+        node = node->next;
+    }
+}
+
+int main() {
+    Node* head = NULL;
+    push(&head, 1);
+    push(&head, 2);
+    push(&head, 3);
+    cout &lt;&lt; "Linked List: ";
+    printList(head);
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>3. Stacks</h2>
+            <img src="data:image/png;base64,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" alt="Stacks">
+            <p>A stack is a LIFO (Last In, First Out) data structure. Elements are added and removed from the top. Stacks are useful for problems involving recursion, expression evaluation, and backtracking.</p>
+            <h3>Example Problem: Checking for balanced parentheses in an expression.</h3>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;stack&gt;
+using namespace std;
+
+bool areParenthesesBalanced(string expr) {
+    stack&lt;char&gt; s;
+    for (char& ch : expr) {
+        if (ch == '(') {
+            s.push(ch);
+        } else if (ch == ')') {
+            if (s.empty()) return false;
+            s.pop();
+        }
+    }
+    return s.empty();
+}
+
+int main() {
+    string expr = "(())";
+    if (areParenthesesBalanced(expr)) {
+        cout &lt;&lt; "Balanced" &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "Not Balanced" &lt;&lt; endl;
+    }
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>4. Queues</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz2zxG8qCJCqPI9wPm3h1iRcEC1zUOFw6q4Q&usqp=CAU" alt="Tries">
+            <p>A queue is a FIFO (First In, First Out) data structure. Elements are added at the rear and removed from the front. Queues are useful for problems involving order, such as breadth-first search (BFS).</p>
+            <h3>Example Problem: Implementing a simple queue.</h3>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main() {
+    queue&lt;int&gt; q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+
+    cout &lt;&lt; "Queue front: " &lt;&lt; q.front() &lt;&lt; endl;
+    q.pop();
+    cout &lt;&lt; "Queue front after pop: " &lt;&lt; q.front() &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>5. Hash Tables</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221220111537/ComponentsofHashing.png" alt="Arrays">
+            <p>Hash tables provide average-case constant time complexity <code>O(1)</code> for insertion, deletion, and search operations. They are useful for problems where you need fast lookups.</p>
+            <h3>Example Problem: Counting the frequency of elements in an array.</h3>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;unordered_map&gt;
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 2, 3, 3, 3};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    unordered_map&lt;int, int&gt; freq;
+    for (int i = 0; i &lt; n; ++i) {
+        freq[arr[i]]++;
+    }
+
+    for (auto& pair : freq) {
+        cout &lt;&lt; pair.first &lt;&lt; ": " &lt;&lt; pair.second &lt;&lt; endl;
+    }
+
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>6. Trees</h2>
+            <img src="https://cdn.programiz.com/sites/tutorial2program/files/tree_0.png" alt="trees">
+            <p>Trees are hierarchical data structures with a root node and children. Binary trees, binary search trees (BSTs), and AVL trees are commonly used types. Trees are useful for representing hierarchical data and for fast search, insert, and delete operations in balanced trees.</p>
+            <h3>Example Problem: In-order traversal of a binary tree.</h3>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+};
+
+Node* newNode(int data) {
+    Node* node = new Node();
+    node->data = data;
+    node->left = node->right = NULL;
+    return node;
+}
+
+void inorderTraversal(Node* root) {
+    if (root == NULL) return;
+    inorderTraversal(root->left);
+    cout &lt;&lt; root->data &lt;&lt; " ";
+    inorderTraversal(root->right);
+}
+
+int main() {
+    Node* root = newNode(1);
+    root->left = newNode(2);
+    root->right = newNode(3);
+    root->left->left = newNode(4);
+    root->left->right = newNode(5);
+
+    cout &lt;&lt; "In-order traversal: ";
+    inorderTraversal(root);
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>7. Heaps</h2>
+            <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/min_heap_example.jpg">
+            <p>Heaps are specialized binary trees that satisfy the heap property. Min-heaps allow fast access to the smallest element, while max-heaps allow fast access to the largest. Heaps are useful for priority queues and for algorithms like heapsort.</p>
+            <h3>Example Problem: Implementing a min-heap.</h3>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+int main() {
+    priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; minHeap;
+    minHeap.push(3);
+    minHeap.push(1);
+    minHeap.push(2);
+
+    cout &lt;&lt; "Min-Heap top: " &lt;&lt; minHeap.top() &lt;&lt; endl;
+    minHeap.pop();
+    cout &lt;&lt; "Min-Heap top after pop: " &lt;&lt; minHeap.top() &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>8. Graphs</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/undirectedgraph.png" alt="graphs">
+            <p>Graphs consist of nodes (vertices) and edges. They are used to represent networks and relationships. Graphs can be represented using adjacency matrices or adjacency lists. Common algorithms include depth-first search (DFS) and breadth-first search (BFS).</p>
+            <h3>Example Problem: Implementing BFS for a graph.</h3>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+void BFS(int start, vector&lt;vector&lt;int&gt;&gt; &graph, vector&lt;bool&gt; &visited) {
+    queue&lt;int&gt; q;
+    q.push(start);
+    visited[start] = true;
+
+    while (!q.empty()) {
+        int node = q.front();
+        q.pop();
+        cout &lt;&lt; node &lt;&lt; " ";
+
+        for (int neighbor : graph[node]) {
+            if (!visited[neighbor]) {
+                q.push(neighbor);
+                visited[neighbor] = true;
+            }
+        }
+    }
+}
+
+int main() {
+    int n = 5; // Number of nodes
+    vector&lt;vector&lt;int&gt;&gt; graph(n);
+    graph[0] = {1, 2};
+    graph[1] = {0, 3, 4};
+    graph[2] = {0};
+    graph[3] = {1};
+    graph[4] = {1};
+
+    vector&lt;bool&gt; visited(n, false);
+    cout &lt;&lt; "BFS starting from node 0: ";
+    BFS(0, graph, visited);
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>9. Tries</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220828232752/Triedatastructure1.png" alt="tries">
+            <p>Tries, also known as prefix trees, are used to store strings. They provide efficient search operations, especially for prefix-based queries. Tries are commonly used in autocomplete and spell-checking applications.</p>
+            <h3>Example Problem: Inserting and searching for words in a trie.</h3>
+            <pre><code>#include &lt;iostream&gt;
+#include &lt;unordered_map&gt;
+using namespace std;
+
+struct TrieNode {
+    unordered_map&lt;char, TrieNode*&gt; children;
+    bool isEndOfWord;
+    TrieNode() : isEndOfWord(false) {}
+};
+
+class Trie {
+public:
+    TrieNode* root;
+    Trie() { root = new TrieNode(); }
+
+    void insert(string word) {
+        TrieNode* node = root;
+        for (char ch : word) {
+            if (!node->children[ch]) {
+                node->children[ch] = new TrieNode();
+            }
+            node = node->children[ch];
+        }
+        node->isEndOfWord = true;
+    }
+
+    bool search(string word) {
+        TrieNode* node = root;
+        for (char ch : word) {
+            if (!node->children[ch]) return false;
+            node = node->children[ch];
+        }
+        return node->isEndOfWord;
+    }
+};
+
+int main() {
+    Trie trie;
+    trie.insert("hello");
+    trie.insert("world");
+
+    cout &lt;&lt; "Search for 'hello': " &lt;&lt; (trie.search("hello") ? "Found" : "Not Found") &lt;&lt; endl;
+    cout &lt;&lt; "Search for 'helloo': " &lt;&lt; (trie.search("helloo") ? "Found" : "Not Found") &lt;&lt; endl;
+
+    return 0;
+}</code></pre>
+        </article>
+        <article>
+            <h2>10. Segment Trees</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/segment-tree1.png" alt="seg_trees">
+            <p>Segment trees are advanced data structures used for range queries and updates. They are particularly useful for problems involving cumulative frequency tables and interval trees.</p>
+            <h3>Example Problem: Range sum query using a segment tree.</h3>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+const int MAX = 1e5;
+int segmentTree[4*MAX];
+int arr[MAX];
+
+void build(int node, int start, int end) {
+    if (start == end) {
+        segmentTree[node] = arr[start];
+    } else {
+        int mid = (start + end) / 2;
+        build(2*node, start, mid);
+        build(2*node+1, mid+1, end);
+        segmentTree[node] = segmentTree[2*node] + segmentTree[2*node+1];
+    }
+}
+
+int query(int node, int start, int end, int l, int r) {
+    if (r &lt; start || end &lt; l) return 0;
+    if (l &lt;= start && end &lt;= r) return segmentTree[node];
+    int mid = (start + end) / 2;
+    int p1 = query(2*node, start, mid, l, r);
+    int p2 = query(2*node+1, mid+1, end, l, r);
+    return p1 + p2;
+}
+
+void update(int node, int start, int end, int idx, int val) {
+    if (start == end) {
+        arr[idx] = val;
+        segmentTree[node] = val;
+    } else {
+        int mid = (start + end) / 2;
+        if (start &lt;= idx && idx &lt;= mid) {
+            update(2*node, start, mid, idx, val);
+        } else {
+            update(2*node+1, mid+1, end, idx, val);
+        }
+        segmentTree[node] = segmentTree[2*node] + segmentTree[2*node+1];
+    }
+}
+
+int main() {
+    int n = 5;
+    arr[0] = 1; arr[1] = 2; arr[2] = 3; arr[3] = 4; arr[4] = 5;
+    build(1, 0, n-1);
+    cout &lt;&lt; "Sum of values in given range = " &lt;&lt; query(1, 0, n-1, 1, 3) &lt;&lt; endl;
+    update(1, 0, n-1, 2, 10);
+    cout &lt;&lt; "Updated sum of values in given range = " &lt;&lt; query(1, 0, n-1, 1, 3) &lt;&lt; endl;
+    return 0;
+}</code></pre>
+        </article>
+    </section>
+    <footer>
+        <b>
+            <p>Mastering data structures is crucial for excelling in competitive programming. By understanding and implementing these structures, you can optimize your solutions and tackle complex problems with ease. Please see our <a href="https://abdullahjvd384.github.io/" target="_blank">Blogs</a> and Keep practicing and experimenting with different problems to enhance your skills. Happy coding!</p>
+        </b>
+        </footer>
+</body>
+</html>
