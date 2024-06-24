@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//www.topcreativeformat.com/194f87d10a5ec7380b8c07b296cf8b18/invoke.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+     crossorigin="anonymous"></script>
+    <title>Building a Voice Assistant with Python and Google Speech Recognition API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #03f86d;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            position: sticky;
+            top: 100px; /* Adjusted top value to move sidebar down */
+            height: calc(100vh - 100px); /* Make sidebar occupy full viewport height minus the offset */
+            overflow-y: auto; /* Enable scrolling */
+        }
+
+        aside h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            flex: 3;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-left: 20px; /* Ensure the main content doesn't overlap the sidebar */
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article h2, article h3 {
+            color: #333;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        code {
+            display: block;
+            background: #f0f0f0;
+            color: #333;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 10px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            aside {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 100%;
+                display: none;
+                z-index: 1000;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            section {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 style="color: #fff;"><a href="https://abdullahjvd384.github.io/">View Blogs</a></h2>
+        <h1>Skills or GPA? Which One is Important?</h1>
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    </header>
+<div class="container">
+    <aside id="sidebar">
+        <h2>Previous Blogs</h2>
+        <ul>
+            <li><a href="blog1.html">Skills or GPA? Which one is Important</a></li>
+            <li><a href="blog2.html">Education crisis in Pakistan</a></li>
+            <li><a href="blog3.html">How to get Good GPA in University??</a></li>
+            <li><a href="blog4.html">Knowledge vs Experience</a></li>
+            <li><a href="blog5.html">10 Must-Have Gadgets for 2024</a></li>
+            <li><a href="blog6.html">How to design a Creative Portfolio</a></li>
+            <li><a href="blog7.html">10 Passive Income Ideas of 2024</a></li>
+            <li><a href="blog8.html">How to Use Data Structures in Competitive Programming</a></li>
+            <li><a href="blog9.html">Implementing Machine Learning Models with Python</a></li>
+            <li><a href="blog10.html">Building a Voice Assistant with Python and Google Speech Recognition API</a></li>
+        </ul>
+    </aside>
+    <section>
+    <article>
+        <div class="content-section">
+            <p>
+                Are you caught in the eternal dilemma of choosing between skills and GPA? Let's explore this conundrum
+                with a mix of fascinating facts, real-world examples, and a sprinkle of humor.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <blockquote>
+                Did you know? Albert Einstein famously said, "Education is not the learning of facts, but the training of
+                the mind to think."
+            </blockquote>
+        </div>
+
+        <div class="content-section">
+            <p>
+                <strong>Striking a Balance:</strong> Picture this: A candidate with a stellar academic record, armed with
+                both theoretical knowledge and practical skills, is like a superhero with the perfect blend of brains and
+                brawn. They are the real MVPs in the professional arena.
+            </p>
+            <img src="https://img.freepik.com/premium-vector/new-skills-infographic-template-design-with-icons-vector-illustration-business-concept_549488-888.jpg" alt="Skills Image">
+            <div class="image-credit">Image Credit: Freepik</div>
+        </div>
+
+        <div class="content-section">
+            <p>
+                <strong>The GPA Conundrum:</strong> On the other hand, GPA has traditionally been seen as a measure of
+                academic success. While a high GPA can open doors to certain opportunities, it may not necessarily reflect
+                one's ability to apply knowledge in real-world scenarios. Some argue that a focus on GPA alone may overlook
+                crucial aspects of a candidate's potential.
+            </p>
+            <img src="https://s3-ap-south-1.amazonaws.com/blogmindler/bloglive/wp-content/uploads/2019/04/17161627/How-much-does-your-college-GPA-matter-Fb.png" alt="GPA Image">
+            <div class="image-credit">Image Credit: Mindler</div>
+        </div>
+
+        <div class="content-section">
+            <blockquote>
+                In the world of tech, the founders of Apple, Microsoft, and Facebook all share a common trait—they dropped
+                out of college. Sometimes, the greatest innovations come from those who dare to defy the conventional
+                norms.
+            </blockquote>
+        </div>
+
+        <div class="content-section">
+            <p>
+                Now, let's inject a bit of humor into this debate. Why did the computer go to therapy? It had too many
+                bytes of emotional baggage! Jokes aside, it's essential to recognize that skills often play a pivotal role
+                in demonstrating practical application and problem-solving abilities.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <p>
+                In conclusion, the debate between skills and GPA is akin to the age-old battle of pizza versus tacos. Each
+                has its unique appeal, and the answer may vary depending on the industry, job role, and individual
+                preferences.
+            </p>
+
+            <p>
+                Ultimately, a well-rounded approach that emphasizes both academic achievement and practical skills is likely
+                to yield the best results in the pursuit of a successful career. So, whether you're an academic ace or a
+                skills virtuoso, remember: there's room for both in the grand tapestry of professional success!
+            </p>
+        </div>
+    </article>
+</section>
+</div>
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar.style.display === "block") {
+            sidebar.style.display = "none";
+        } else {
+            sidebar.style.display = "block";
+        }
+    }
+</script>
+</body>
+
+</html>
