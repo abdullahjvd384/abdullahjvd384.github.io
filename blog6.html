@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//www.topcreativeformat.com/194f87d10a5ec7380b8c07b296cf8b18/invoke.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+     crossorigin="anonymous"></script>
+    <title>Building a Voice Assistant with Python and Google Speech Recognition API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #03f86d;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            position: sticky;
+            top: 100px; /* Adjusted top value to move sidebar down */
+            height: calc(100vh - 100px); /* Make sidebar occupy full viewport height minus the offset */
+            overflow-y: auto; /* Enable scrolling */
+        }
+
+        aside h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            flex: 3;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-left: 20px; /* Ensure the main content doesn't overlap the sidebar */
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article h2, article h3 {
+            color: #333;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        code {
+            display: block;
+            background: #f0f0f0;
+            color: #333;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 10px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            aside {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 100%;
+                display: none;
+                z-index: 1000;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            section {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="color: #fff;"><a href="https://abdullahjvd384.github.io/">View Blogs</a></h2>
+        <h1>Designing a Job Portfolio: A Guide for Job Seekers</h1>
+        <p class="centered">"Your portfolio is your silent ambassador." - Cullen Wilson</p>
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    </header>
+    <div class="container">
+    <aside id="sidebar">
+        <h2>Previous Blogs</h2>
+        <ul>
+            <li><a href="blog1.html">Skills or GPA? Which one is Important</a></li>
+            <li><a href="blog2.html">Education crisis in Pakistan</a></li>
+            <li><a href="blog3.html">How to get Good GPA in University??</a></li>
+            <li><a href="blog4.html">Knowledge vs Experience</a></li>
+            <li><a href="blog5.html">10 Must-Have Gadgets for 2024</a></li>
+            <li><a href="blog6.html">How to design a Creative Portfolio</a></li>
+            <li><a href="blog7.html">10 Passive Income Ideas of 2024</a></li>
+            <li><a href="blog8.html">How to Use Data Structures in Competitive Programming</a></li>
+            <li><a href="blog9.html">Implementing Machine Learning Models with Python</a></li>
+            <li><a href="blog10.html">Building a Voice Assistant with Python and Google Speech Recognition API</a></li>
+        </ul>
+    </aside>
+        <section>
+        
+            <p>As a job seeker, your portfolio is not just a collection of past work; it's your showcase of skills, creativity, and potential. Whether you're a designer, developer, writer, or in any creative field, a well-crafted portfolio can make a lasting impression on potential employers.</p>
+
+            <p>Here’s how to create a compelling portfolio that stands out:</p>
+        
+
+        <article>
+            <h2>1. Define Your Purpose</h2>
+            <p>Before diving into designing your portfolio, clarify your goals. Are you aiming for a specific job role or industry? Understanding your target audience and what they look for will guide your portfolio’s content and design.</p>
+        </article>
+
+        <article>
+            <h2>2. Showcase Your Best Work</h2>
+            <p>Select your strongest pieces that demonstrate your skills and achievements relevant to the job you're seeking. Quality over quantity is key; include projects that highlight your versatility and expertise.</p>
+        </article>
+
+        <article>
+            <h2>3. Organize Effectively</h2>
+            <p>Structure your portfolio logically with clear navigation. Use categories or tags to group similar projects. Employers should find it easy to navigate and locate specific examples of your work.</p>
+        </article>
+
+        <article>
+            <h2>4. Provide Context and Process</h2>
+            <p>For each project, briefly explain its context, your role, challenges faced, and how you solved them. Showcase your creative process through sketches, wireframes, or prototypes to give employers insight into your problem-solving abilities.</p>
+        </article>
+
+        <article>
+            <h2>5. Incorporate Personal Branding</h2>
+            <p>Reflect your personal brand through the design of your portfolio. Use a consistent color scheme, typography, and layout that align with your professional identity. Your portfolio should visually represent who you are as a creative professional.</p>
+        </article>
+
+        <article>
+            <h2>6. Include Testimonials and Recommendations</h2>
+            <p>If possible, add testimonials from clients or colleagues that validate your skills and work ethic. Recommendations provide social proof and build credibility with potential employers.</p>
+        </article>
+
+        <article>
+            <h2>7. Make it Interactive (If Applicable)</h2>
+            <p>Depending on your field, consider making your portfolio interactive. For example, web designers can showcase live websites with clickable prototypes, demonstrating user experience and functionality.</p>
+        </article>
+
+        <article>
+            <h2>8. Optimize for Accessibility and Responsiveness</h2>
+            <p>Ensure your portfolio is accessible to all users, including those with disabilities. Use alt text for images, maintain a readable font size, and test usability on different devices and browsers.</p>
+        </article>
+        
+        <article>
+            <h2>9. Avoid Unnecessary Details</h2>
+            <p>When crafting your portfolio, it's crucial to maintain focus and professionalism. Here are some key points to consider:</p>
+            <ul>
+                <li><strong>Avoid Personal Social Media:</strong> While it's tempting to link personal social media accounts like Instagram or Quora, keep your portfolio strictly professional. Focus on showcasing your work and expertise related to your field.</li>
+                <li><strong>Exclude Irrelevant Projects:</strong> Only include projects that are directly relevant to your core field or the type of work you're seeking. Small or elective projects that don't align with your career goals can clutter your portfolio and distract potential clients or employers.</li>
+            </ul>
+        </article>
+        
+
+        <article>
+            <h2>10. Share your Portfolio</h2>
+            <p>Once you've built your portfolio, the next crucial step is to share it effectively. Here's how:</p>
+            <ul>
+                <li><strong>Utilize Social Media:</strong> Share your portfolio projects on platforms like LinkedIn, Instagram, Behance, and Dribbble to reach a wider audience of potential clients and collaborators.</li>
+                <li><strong>Network with Peers:</strong> Engage with fellow designers and professionals in design communities and forums. Participate in discussions, offer insights, and share your work for feedback and exposure.</li>
+                <li><strong>Attend Design Events:</strong> Whether virtual or physical, attending design conferences, workshops, and meetups provides opportunities to showcase your portfolio and make valuable connections in the industry.</li>
+                <li><strong>Optimize for SEO:</strong> Ensure your portfolio website is optimized for search engines with relevant keywords and descriptions. This helps potential clients find your work when searching online.</li>
+            </ul>
+        </article>
+        
+
+        <article>
+            <h2>Example: <a href="https://codedatafusion.tiiny.site" target="_blank">CodeData Fusion</a></h2>
+            <p>For inspiration, explore <a href="https://codedatafusion.tiiny.site" target="_blank">codedatafusion.tiiny.site</a>, a portfolio showcasing creative design and development projects. Notice how each project is presented with detailed descriptions, visuals, and a cohesive design that reflects the creator’s skills and style.</p>
+            <img src="PortfolioPic.png" alt="Portfolio Example">
+        </article>
+    </section>
+
+</div>
+    <footer>
+        <b>
+        <p>Designing a job portfolio requires careful planning and attention to detail. Tailor your portfolio to showcase your unique skills and experiences effectively, making a compelling case for why you’re the right fit for your dream job.</p>
+        <p>For more career advice and portfolio tips, explore our <a href="https://abdullahjvd384.github.io/">Blog</a> for additional resources.</p>
+        </b>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
