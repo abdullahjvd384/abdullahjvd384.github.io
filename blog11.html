@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//www.topcreativeformat.com/194f87d10a5ec7380b8c07b296cf8b18/invoke.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6605123123518520"
+     crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+    <title>Building an Autonomous Car Simulation with Python and Reinforcement Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #03f86d;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            position: sticky;
+            top: 100px; /* Adjusted top value to move sidebar down */
+            height: calc(100vh - 100px); /* Make sidebar occupy full viewport height minus the offset */
+            overflow-y: auto; /* Enable scrolling */
+        }
+
+        aside h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            flex: 3;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-left: 20px; /* Ensure the main content doesn't overlap the sidebar */
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article h2, article h3 {
+            color: #333;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        code {
+            display: block;
+            background: #f0f0f0;
+            color: #333;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 10px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            aside {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 100%;
+                display: none;
+                z-index: 1000;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            section {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><a href="https://abdullahjvd384.github.io/">View Blogs</a></h2>
+        <h1>Building an Autonomous Car Simulation with Python and Reinforcement Learning</h1>
+        <p>A deep dive into creating a self-driving car simulation using modern AI techniques.</p>
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    </header>
+    <div class="container"><aside id="sidebar">
+        <h2>Previous Blogs</h2>
+        <ul>
+            <li><a href="blog1.html">Skills or GPA? Which one is Important</a></li>
+            <li><a href="blog2.html">Education crisis in Pakistan</a></li>
+            <li><a href="blog3.html">How to get Good GPA in University??</a></li>
+            <li><a href="blog4.html">Knowledge vs Experience</a></li>
+            <li><a href="blog5.html">10 Must-Have Gadgets for 2024</a></li>
+            <li><a href="blog6.html">How to design a Creative Portfolio</a></li>
+            <li><a href="blog7.html">10 Passive Income Ideas of 2024</a></li>
+            <li><a href="blog8.html">How to Use Data Structures in Competitive Programming</a></li>
+            <li><a href="blog9.html">Implementing Machine Learning Models with Python</a></li>
+            <li><a href="blog10.html">Building a Voice Assistant with Python and Google Speech Recognition API</a></li>
+        </ul>
+    </aside>
+    <section>
+        <article>
+            <h2>Introduction to Autonomous Vehicles</h2>
+            <p>Autonomous vehicles are capable of sensing their environment and navigating without human input. These cars use a combination of sensors, cameras, radar, and artificial intelligence to drive safely. One of the core technologies behind autonomous driving is reinforcement learning, a type of machine learning where an agent learns to make decisions by performing actions and receiving rewards.</p>
+        </article>
+        <article>
+            <h2>Setting Up Your Environment</h2>
+            <p>Before we start coding, ensure you have Python installed on your system. We will use popular libraries such as TensorFlow, OpenAI Gym, and NumPy. Install these libraries using pip:</p>
+            <code>pip install tensorflow gym numpy</code>
+        </article>
+        <article>
+            <h2>Understanding Reinforcement Learning</h2>
+            <p>Reinforcement Learning (RL) involves training an agent to make a sequence of decisions by rewarding it for good decisions and penalizing it for bad ones. The agent's goal is to maximize its cumulative reward over time. Key concepts in RL include:</p>
+            <ul>
+                <li><strong>Agent:</strong> The learner or decision maker.</li>
+                <li><strong>Environment:</strong> What the agent interacts with and learns from.</li>
+                <li><strong>Action:</strong> What the agent can do.</li>
+                <li><strong>State:</strong> The current situation of the agent.</li>
+                <li><strong>Reward:</strong> Feedback from the environment based on the action.</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Creating the Simulation Environment</h2>
+            <p>We will use the OpenAI Gym library to create our simulation environment. Gym provides various environments for testing and developing RL algorithms. Here is a basic example to get started:</p>
+            <code>
+import gym
+
+env = gym.make('CarRacing-v0')
+env.reset()
+for _ in range(1000):
+    env.render()
+    action = env.action_space.sample()
+    env.step(action)
+env.close()
+            </code>
+            <img src="https://play-lh.googleusercontent.com/YSR0QUbRnylmUHhN6F3NtTI5OzQcvmW5AGgL8sUbClRoqfu_GHA9DbvM0Ai0MmKg650=w526-h296-rw" alt="Car Racing Simulation">
+        </article>
+        <article>
+            <h2>Building the Neural Network</h2>
+            <p>We will use TensorFlow to build our neural network. The network will take the current state of the car as input and output the best action to take. Below is a simple neural network model:</p>
+            <code>
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Flatten
+
+def build_model(input_shape, action_space):
+    model = Sequential()
+    model.add(Flatten(input_shape=input_shape))
+    model.add(Dense(24, activation='relu'))
+    model.add(Dense(24, activation='relu'))
+    model.add(Dense(action_space, activation='linear'))
+    model.compile(loss='mse', optimizer=tf.keras.optimizers.Adam(lr=0.001))
+    return model
+            </code>
+            <img src="https://www.researchgate.net/publication/341246472/figure/fig1/AS:888924905951232@1588947621179/Deep-Neural-Network-Driven-Autonomous-Car.png" alt="Neural Network Architecture">
+        </article>
+        <article>
+            <h2>Training the Model</h2>
+            <p>We will use the DQN (Deep Q-Network) algorithm to train our model. The agent will learn by exploring the environment and updating its knowledge based on the rewards received. Here is a simplified training loop:</p>
+            <code>
+import numpy as np
+
+def train_model(env, model, episodes=1000):
+    for episode in range(episodes):
+        state = env.reset()
+        state = np.reshape(state, [1, state_size])
+        for time in range(500):
+            env.render()
+            action = np.argmax(model.predict(state))
+            next_state, reward, done, _ = env.step(action)
+            next_state = np.reshape(next_state, [1, state_size])
+            model.fit(state, reward, epochs=1, verbose=0)
+            state = next_state
+            if done:
+                print(f"Episode: {episode}/{episodes}, Score: {time}")
+                break
+train_model(env, model)
+            </code>
+        </article>
+        <article>
+            <h2>Evaluating the Model</h2>
+            <p>After training, we evaluate the model by testing its performance in the environment. The goal is to see how well the agent has learned to navigate the track. Here is a simple evaluation loop:</p>
+            <code>
+def evaluate_model(env, model, episodes=10):
+    for episode in range(episodes):
+        state = env.reset()
+        state = np.reshape(state, [1, state_size])
+        total_reward = 0
+        for time in range(500):
+            env.render()
+            action = np.argmax(model.predict(state))
+            next_state, reward, done, _ = env.step(action)
+            state = np.reshape(next_state, [1, state_size])
+            total_reward += reward
+            if done:
+                break
+        print(f"Episode: {episode+1}/{episodes}, Total Reward: {total_reward}")
+evaluate_model(env, model)
+            </code>
+            <img src="https://pub.mdpi-res.com/electronics/electronics-12-04385/article_deploy/html/images/electronics-12-04385-g007.png?1698126115" alt="Evaluating the Model">
+        </article>
+    </section>
+</div>
+<b>
+    <footer>
+        <p>Building an autonomous car simulation with Python and reinforcement learning is a challenging but rewarding project. It combines various aspects of AI and machine learning, providing a comprehensive understanding of how these technologies can be applied in real-world scenarios. Keep visiting our <a href="https://abdullahjvd384.github.io/" target="_blank">Blogs</a> by experimenting with different algorithms and parameters, you can further improve the performance of your autonomous car. Happy coding!</p>
+    </footer>
+</b>
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar.style.display === "block") {
+            sidebar.style.display = "none";
+        } else {
+            sidebar.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
