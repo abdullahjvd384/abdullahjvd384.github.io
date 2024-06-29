@@ -44,17 +44,28 @@
             margin: 20px auto;
             padding: 0 20px;
         }
-        .ad-container {
+        .ad-container-right {
             position: fixed;
             right: 0;
-            top: 0px;
+            top: 0;
             width: 160px;
-            bottom: 0px; /* Ensure the ad container stretches to the bottom with a margin */
-            padding: 0rem;
+            bottom: 0;
+            padding: 0;
             background: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 5px;
-            
+        }
+
+        .ad-container-left {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 160px;
+            bottom: 0;
+            padding: 0;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
         }
         aside {
             flex: 1;
@@ -169,7 +180,7 @@
                 margin-left: 0;
                 padding: 1rem;
             }
-            .ad-container {
+            .ad-container-right,.ad-container-left {
                 display: none;
             }
         }
@@ -268,8 +279,19 @@
         </div>
     </article>
 </section>
-    <div class="ad-container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+    <div class="ad-container-left">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7788578024585393"
+     crossorigin="anonymous"></script>
+<!-- Vertical ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-7788578024585393"
+     data-ad-slot="1009628362"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <div class="ad-container-right">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7788578024585393"
      crossorigin="anonymous"></script>
 <!-- Vertical ad -->
 <ins class="adsbygoogle"
