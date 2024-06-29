@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//www.topcreativeformat.com/194f87d10a5ec7380b8c07b296cf8b18/invoke.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+     crossorigin="anonymous"></script>
+    <title>How Youtube Recommends videos in feed??</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #03f86d;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            position: sticky;
+            top: 100px; /* Adjusted top value to move sidebar down */
+            height: calc(100vh - 100px); /* Make sidebar occupy full viewport height minus the offset */
+            overflow-y: auto; /* Enable scrolling */
+        }
+
+        aside h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            flex: 3;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-left: 20px; /* Ensure the main content doesn't overlap the sidebar */
+        }
+
+        article {
+            margin-bottom: 2rem;
+        }
+
+        article h2, article h3 {
+            color: #333;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        article img {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        code {
+            display: block;
+            background: #f0f0f0;
+            color: #333;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 10px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        footer {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            aside {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                height: 100%;
+                display: none;
+                z-index: 1000;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            section {
+                margin-left: 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2><a href="https://abdullahjvd384.github.io/">View Blogs</a></h2>
+        <h1>Understanding Recommendation Systems on Social Media Platforms</h1>
+        <p>Explore how recommendation systems work and their impact on user experience.</p>
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <h2>Previous Blogs</h2>
+            <ul>
+                <li><a href="blog1.html">Skills or GPA? Which one is Important</a></li>
+                <li><a href="blog2.html">Education crisis in Pakistan</a></li>
+                <li><a href="blog3.html">How to get Good GPA in University??</a></li>
+                <li><a href="blog4.html">Knowledge vs Experience</a></li>
+                <li><a href="blog5.html">10 Must-Have Gadgets for 2024</a></li>
+                <li><a href="blog6.html">How to design a Creative Portfolio</a></li>
+                <li><a href="blog7.html">10 Passive Income Ideas of 2024</a></li>
+                <li><a href="blog8.html">How to Use Data Structures in Competitive Programming</a></li>
+                <li><a href="blog9.html">Implementing Machine Learning Models with Python</a></li>
+                <li><a href="blog10.html">Building a Voice Assistant with Python and Google Speech Recognition API</a></li>
+                <li><a href="blog11.html">Building an Autonomous Car Simulation with Python and Reinforcement Learning</a></li>
+                
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Introduction to Recommendation Systems</h2>
+                <p>Recommendation systems are algorithms designed to suggest relevant content to users based on their preferences, behavior, and interactions. These systems are widely used in social media to enhance user engagement and satisfaction. They analyze user data and use various filtering techniques to provide personalized recommendations.</p>
+                <img src="https://www.researchgate.net/publication/220827211/figure/fig2/AS:394007092973580@1470950019808/Structure-of-a-recommender-system.png" alt="Recommendation System Diagram">
+            </article>
+            <article>
+                <h2>Types of Recommendation Systems</h2>
+                <h3>Collaborative Filtering</h3>
+                <p>Collaborative filtering is based on the idea that users who have interacted with similar content in the past are likely to have similar preferences. There are two types:</p>
+                <ul>
+                    <li><strong>User-based collaborative filtering:</strong> Recommends items based on the similarities between users.</li>
+                    <li><strong>Item-based collaborative filtering:</strong> Recommends items based on the similarities between items.</li>
+                </ul>
+                <img src="https://www.researchgate.net/publication/355218515/figure/fig2/AS:1079169563787266@1634305482033/The-collaborative-filtering-algorithms-a-user-based-b-item-based.png" alt="Collaborative Filtering">
+                <h3>Content-Based Filtering</h3>
+                <p>Content-based filtering recommends items based on the similarity between the content of items and a user's profile. This method uses item features and user preferences to generate recommendations.</p>
+                <img src="https://www.researchgate.net/publication/329584927/figure/fig1/AS:702910052708353@1544598224391/Content-Based-Filtering.jpg" alt="Content-Based Filtering">
+            </article>
+            <article>
+                <h2>How Social Media Platforms Use Recommendation Systems</h2>
+                <h3>Facebook</h3>
+                <p>Facebook uses a combination of collaborative filtering, content-based filtering, and deep learning algorithms to recommend posts, friends, and advertisements. The system considers user interactions, likes, shares, and comments to personalize the feed.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*v1Jag4yttvyyI_h2lx4m2w.png" alt="Facebook Recommendation System">
+                <h3>YouTube</h3>
+                <p>YouTube leverages collaborative filtering and content-based filtering to suggest videos. The platform analyzes watch history, search history, and user demographics to recommend videos that match user interests.</p>
+                
+                <h3>Instagram</h3>
+                <p>Instagram uses machine learning algorithms to recommend posts, stories, and reels. The system evaluates user interactions, hashtags, and engagement metrics to curate a personalized feed.</p>
+                
+            </article>
+            <article>
+                <h2>Building a Simple Recommendation System in Python</h2>
+                <p>Let's build a simple recommendation system using Python. We'll use collaborative filtering to recommend movies based on user ratings.</p>
+                <code>
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Sample user ratings data
+data = {'user': ['A', 'A', 'A', 'B', 'B', 'C', 'C', 'C'],
+        'item': ['Item1', 'Item2', 'Item3', 'Item1', 'Item4', 'Item2', 'Item3', 'Item4'],
+        'rating': [5, 3, 4, 4, 2, 2, 5, 3]}
+
+df = pd.DataFrame(data)
+
+# Pivot the dataframe to create a user-item matrix
+user_item_matrix = df.pivot_table(index='user', columns='item', values='rating')
+
+# Fill missing values with 0
+user_item_matrix = user_item_matrix.fillna(0)
+
+# Compute the cosine similarity between users
+user_similarity = cosine_similarity(user_item_matrix)
+
+# Convert the similarity matrix to a dataframe
+user_similarity_df = pd.DataFrame(user_similarity, index=user_item_matrix.index, columns=user_item_matrix.index)
+
+print(user_similarity_df)
+                </code>
+                
+            </article>
+            <article>
+                <h2>Challenges and Future of Recommendation Systems</h2>
+                <p>Recommendation systems face several challenges, including data privacy concerns, algorithmic bias, and scalability. As technology evolves, these systems are becoming more sophisticated, integrating advanced machine learning techniques such as deep learning and reinforcement learning to improve accuracy and personalization.</p>
+                
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>Understanding recommendation systems is crucial for enhancing user engagement on social media platforms. By leveraging advanced algorithms and machine learning techniques, these systems provide personalized experiences that keep users coming back. Keep exploring and experimenting with different approaches to build better recommendation systems. Visit our <a href="https://abdullahjvd384.github.io/" target="_blank">Blogs</a> for more insights. Happy coding!</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.display === "block") {
+                sidebar.style.display = "none";
+            } else {
+                sidebar.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
