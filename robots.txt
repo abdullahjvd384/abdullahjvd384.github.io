@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /private/
-Disallow: /temp/
 Allow: /
 Sitemap: https://abdullahjvd384.github.io/sitemap.xml
