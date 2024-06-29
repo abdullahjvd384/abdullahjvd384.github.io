@@ -44,7 +44,16 @@
             margin: 20px auto;
             padding: 0 20px;
         }
-
+        .ad-container {
+            flex: 1;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin-left: 20px;
+            position: sticky;
+            top: 100px;
+        }
         aside {
             flex: 1;
             padding: 1rem;
@@ -158,6 +167,9 @@
                 margin-left: 0;
                 padding: 1rem;
             }
+            .ad-container {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -172,16 +184,7 @@
 <div class="container">
     <aside id="sidebar">
         <h2>Previous Blogs</h2>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-     crossorigin="anonymous"></script>
-<!-- Vertical ad -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:160px;height:600px"
-     data-ad-client="ca-pub-7845606961004033"
-     data-ad-slot="1009628362"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        
         <ul>
             <li><a href="blog1.html">Skills or GPA? Which one is Important</a></li>
             <li><a href="blog2.html">Education crisis in Pakistan</a></li>
@@ -263,6 +266,19 @@
         </div>
     </article>
 </section>
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+     crossorigin="anonymous"></script>
+<!-- Vertical ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:600px"
+     data-ad-client="ca-pub-7845606961004033"
+     data-ad-slot="1009628362"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+    
 </div>
 <script>
     function toggleSidebar() {
