@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjusted from center to flex-start */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px; /* Added padding for some space around the container */
+}
+
+.editor-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.editor {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 200px; /* Increased min-height for better initial size */
+}
+
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preview {
+    width: 95%;
+    height: calc(100vh - 90px); /* Dynamically calculate height based on viewport */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.open-preview-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.open-preview-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Side Containers */
+.side-container {
+    position: fixed;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    display: none; /* Hidden by default */
+    overflow-y: auto;
+    z-index: 10;
+}
+
+/* Position left and right side containers */
+.side-container.left {
+    left: 0;
+}
+
+.side-container.right {
+    right: 0;
+}
+
+/* Show side containers on larger screens */
+@media (min-width: 1024px) {
+    .side-container {
+        display: block;
+    }
+}
+
+footer.container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+     margin-top: auto;
+    /*margin-right: 100px; */
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-links a:hover img {
+    filter: brightness(0.8);
+}
