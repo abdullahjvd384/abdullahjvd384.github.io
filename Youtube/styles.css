@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    margin-right: 320px; /* Adjust to accommodate the ad container */
+}
+
+#video-player {
+    flex: 2;
+}
+
+#video-player iframe {
+    width: 150%; /* Set to 100% of the parent container */
+    height: 80vh; /* 80% of the viewport height */
+    max-width: 1200px; /* Optional: Set a max width */
+}
+
+#video-list {
+    flex: 1;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#video-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#video-list li {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#video-list li:hover {
+    background: #eaeaea;
+}
+
+#ad-container {
+    position: fixed;
+    right: 0;
+    top: 100px; /* Adjust as needed */
+    width: 300px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
