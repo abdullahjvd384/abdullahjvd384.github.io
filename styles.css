@@ -1,8 +1,8 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow: hidden; /* Prevent the whole page from scrolling */
+    background-color: #f4f4f4;
 }
 
 .ad {
@@ -12,76 +12,95 @@ body {
     font-size: 1.2em;
 }
 
-
-.top-ad {
-    width: 72%;
-    height: 100px; /* Adjust height as needed */
-    margin: 20px auto 0; /* Center horizontally and add margin-top */
-    top: 0;
-}
-
-
 .main-container {
     display: flex;
-    height: calc(100vh - 115px); /* Adjust based on top ad height */
-    overflow: hidden; /* Prevent the whole page from scrolling */
-    margin-top: -200px; /* Move it up by 20px, adjust as needed */
-    background-color: rgb(166, 197, 207);
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #e9ecef;
 }
 
 .left-ad, .right-ad {
-    width: 170px;
-}
-
-.left-ad {
-    height: 100%;
-    position: fixed;
-    top: 100px; /* Adjust based on top ad height */
-    left: 0;
+    width: 160px;
     background-color: lightgray;
-}
-
-.right-ad {
-    height: 100%;
-    position: fixed;
-    top: 100px; /* Adjust based on top ad height */
-    right: 0;
-    background-color: lightgray;
+    display: none; /* Hidden by default for mobile */
 }
 
 .editor-container {
-    margin: 50px 200px; /* Increased margins */
     flex: 1;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Make the editor container scrollable */
     background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 600px; /* Increased minimum height */
 }
 
 .editor-header {
-    background-color: #ddd;
+    background-color: #007bff;
     padding: 10px;
-    display: flex;
-    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
 .editor-header button {
-    background-color: #4CAF50; /* Green */
+    background-color: #28a745; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 #editor {
     flex: 1;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
     overflow-y: auto;
+    min-height: 500px; /* Ensure a minimum height */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .main-container {
+        margin: 0 170px; /* Adjust for side ads on medium to large screens */
+    }
+
+    .left-ad, .right-ad {
+        display: block;
+        height: calc(100vh - 20px);
+        position: fixed;
+        top: 10px;
+    }
+
+    .left-ad {
+        left: 10px;
+    }
+
+    .right-ad {
+        right: 10px;
+    }
+
+    .editor-container {
+        margin: 0 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .editor-container {
+        margin: 0;
+    }
+
+    .editor-header button {
+        width: 100%; /* Full width button on small screens */
+    }
 }
