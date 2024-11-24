@@ -4,174 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Text Editor</title>
+    <title>Text Editor For Desktop</title>
     <link rel="stylesheet" href="styles.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033" crossorigin="anonymous"></script>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        .main-container {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-        }
-
-        /* Ads styling */
-        .ad {
-            text-align: center;
-            background-color: #f1f1f1;
-            padding: 10px 0;
-        }
-
-        .top-ad,
-        .bottom-ad {
-            width: 100%;
-        }
-
-        .content-container {
-            display: flex;
-            flex: 1;
-            overflow: hidden;
-        }
-
-        .left-ad,
-        .right-ad {
-            width: 160px;
-            background-color: #f9f9f9;
-            padding: 10px 0;
-        }
-
-        .editor-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Editor styling */
-        .editor-header {
-            margin-bottom: 10px;
-        }
-
-        .editor-header button {
-            margin-right: 5px;
-            padding: 8px 12px;
-            border: none;
-            cursor: pointer;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 4px;
-        }
-
-        .editor-header button:hover {
-            background-color: #0056b3;
-        }
-
-        #editor {
-            flex: 1;
-            width: 100%;
-            max-width: 800px;
-            min-height: 400px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 10px;
-            overflow-y: auto;
-            outline: none;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Top Ad -->
-    <div class="ad top-ad">
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-7845606961004033"
-            data-ad-slot="9387877493"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
     <div class="main-container">
-        <div class="content-container">
-            <!-- Left Ad -->
-            <div id="leftAd" class="ad left-ad">
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:160px;height:600px"
-                    data-ad-client="ca-pub-7845606961004033"
-                    data-ad-slot="3015903620"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+        <div id="leftAd" class="ad left-ad">
+            <!-- 160_x_600_ads -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:160px;height:600px"
+                data-ad-client="ca-pub-7845606961004033"
+                data-ad-slot="3015903620"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
-            <!-- Editor Section -->
-            <div class="editor-container">
-                <div class="editor-header">
-                    <button onclick="execCommand('bold')">Bold</button>
-                    <button onclick="execCommand('italic')">Italic</button>
-                    <button onclick="execCommand('underline')">Underline</button>
-                    <button onclick="downloadText()">Download</button>
-                </div>
-                <div id="editor" contenteditable="true"></div>
+        <div class="editor-container">
+            <div class="editor-header">
+                <button id="downloadBtn">Download</button>
             </div>
+            <div id="editor" contenteditable="true"></div>
+        </div>
 
-            <!-- Right Ad -->
-            <div id="rightAd" class="ad right-ad">
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:160px;height:600px"
-                    data-ad-client="ca-pub-7845606961004033"
-                    data-ad-slot="3015903620"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+        <div id="rightAd" class="ad right-ad">
+            <!-- 160_x_600_ads -->
+            <ins class="adsbygoogle"
+                style="display:inline-block;width:160px;height:600px"
+                data-ad-client="ca-pub-7845606961004033"
+                data-ad-slot="3015903620"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
 
-    <!-- Bottom Ad -->
-    <div class="ad bottom-ad">
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-7845606961004033"
-            data-ad-slot="9387877493"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
-
     <script>
-        // Execute editor commands like bold, italic, underline
-        function execCommand(command) {
-            document.execCommand(command, false, null);
-        }
-
-        // Download the content of the editor as a text file
-        function downloadText() {
-            const text = document.getElementById("editor").innerHTML;
-            const blob = new Blob([text], { type: "text/plain" });
-            const link = document.createElement("a");
-            link.download = "editor_content.txt";
-            link.href = window.URL.createObjectURL(blob);
-            link.click();
-        }
-
-        // Function to refresh ads
+        // Function to refresh an ad
         function refreshAd(adContainerId, adSlot) {
             const adContainer = document.getElementById(adContainerId);
 
@@ -196,6 +67,7 @@
             refreshAd('rightAd', '3015903620');
         }, 600000); // 10 minutes in milliseconds
     </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
