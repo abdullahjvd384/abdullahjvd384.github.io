@@ -4,58 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Editor For Desktop</title>
+    <title>Advanced Text Editor</title>
     <link rel="stylesheet" href="styles.css">
-<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033" crossorigin="anonymous"></script>
-  <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+
+        /* Ads styling */
+        .ad {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+        }
+
+        .top-ad,
+        .bottom-ad {
+            width: 100%;
+        }
+
+        .content-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .left-ad,
+        .right-ad {
+            width: 160px;
+            background-color: #f9f9f9;
+            padding: 10px 0;
+        }
+
+        .editor-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Editor styling */
+        .editor-header {
+            margin-bottom: 10px;
+        }
+
+        .editor-header button {
+            margin-right: 5px;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .editor-header button:hover {
+            background-color: #0056b3;
+        }
+
+        #editor {
+            flex: 1;
+            width: 100%;
+            max-width: 800px;
+            min-height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            overflow-y: auto;
+            outline: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="ad left-ad">
-           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-     crossorigin="anonymous"></script>
-<!-- 160_x_600_ads -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:160px;height:600px"
-     data-ad-client="ca-pub-7845606961004033"
-     data-ad-slot="3015903620"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-        </div>
-        <div class="editor-container">
-            <div class="editor-header">
-                <button id="downloadBtn">Download</button>
-            </div>
-            <div id="editor" contenteditable="true"></div>
-        </div>
-        <div class="ad right-ad">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-     crossorigin="anonymous"></script>
-<!-- 160_x_600_ads -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:160px;height:600px"
-     data-ad-client="ca-pub-7845606961004033"
-     data-ad-slot="3015903620"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-        </div>
-        <!-- <div class="ad bottom-ad">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033" crossorigin="anonymous"></script>
-            
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7845606961004033" data-ad-slot="9387877493" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div> -->
+    <!-- Top Ad -->
+    <div class="ad top-ad">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7845606961004033"
+            data-ad-slot="9387877493"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
-    <script src="scripts.js"></script>
+
+    <div class="main-container">
+        <div class="content-container">
+            <!-- Left Ad -->
+            <div id="leftAd" class="ad left-ad">
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:160px;height:600px"
+                    data-ad-client="ca-pub-7845606961004033"
+                    data-ad-slot="3015903620"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <!-- Editor Section -->
+            <div class="editor-container">
+                <div class="editor-header">
+                    <button onclick="execCommand('bold')">Bold</button>
+                    <button onclick="execCommand('italic')">Italic</button>
+                    <button onclick="execCommand('underline')">Underline</button>
+                    <button onclick="downloadText()">Download</button>
+                </div>
+                <div id="editor" contenteditable="true"></div>
+            </div>
+
+            <!-- Right Ad -->
+            <div id="rightAd" class="ad right-ad">
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:160px;height:600px"
+                    data-ad-client="ca-pub-7845606961004033"
+                    data-ad-slot="3015903620"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad bottom-ad">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7845606961004033"
+            data-ad-slot="9387877493"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <script>
+        // Execute editor commands like bold, italic, underline
+        function execCommand(command) {
+            document.execCommand(command, false, null);
+        }
+
+        // Download the content of the editor as a text file
+        function downloadText() {
+            const text = document.getElementById("editor").innerHTML;
+            const blob = new Blob([text], { type: "text/plain" });
+            const link = document.createElement("a");
+            link.download = "editor_content.txt";
+            link.href = window.URL.createObjectURL(blob);
+            link.click();
+        }
+
+        // Function to refresh ads
+        function refreshAd(adContainerId, adSlot) {
+            const adContainer = document.getElementById(adContainerId);
+
+            // Clear the container
+            adContainer.innerHTML = '';
+
+            // Add new ad tag
+            const ins = document.createElement('ins');
+            ins.className = 'adsbygoogle';
+            ins.style = 'display:inline-block;width:160px;height:600px';
+            ins.setAttribute('data-ad-client', 'ca-pub-7845606961004033');
+            ins.setAttribute('data-ad-slot', adSlot);
+            adContainer.appendChild(ins);
+
+            // Reinitialize ads
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+
+        // Refresh ads every 10 minutes (600,000 ms)
+        setInterval(() => {
+            refreshAd('leftAd', '3015903620');
+            refreshAd('rightAd', '3015903620');
+        }, 600000); // 10 minutes in milliseconds
+    </script>
 </body>
 
 </html>
