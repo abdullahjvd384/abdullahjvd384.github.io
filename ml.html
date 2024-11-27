@@ -48,10 +48,6 @@
     <script>
         function updateAds() {
             const ads = document.querySelectorAll('.ad-space');
-            ads.forEach(ad => {
-                
-                ad.innerHTML = `<div> Ad Content ${new Date().toLocaleTimeString()}</div>`;
-            });
         }
         // Update ads every 2 minutes
         setInterval(updateAds, 2 * 60 * 1000);
