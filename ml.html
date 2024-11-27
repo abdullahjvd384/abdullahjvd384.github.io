@@ -4,83 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Ads with Centered Content</title>
+    <title>Machine Learning For Data Science</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
         }
 
         .container {
             margin: 0 auto;
             max-width: calc(100% - 400px);
-            /* Adjust content width to leave space for ads */
+            /* Leave space for ads (200px each side) */
             padding: 20px;
             background-color: #fff;
+            text-align: center;
         }
 
         .ad-space {
             position: fixed;
-            width: 180px;
-            height: 700px;
-            background-color: #f4f4f4;
-            border: 1px solid #ccc;
+            width: 160px;
+            height: 600px;
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
         }
 
         .ad-space.left {
             left: 0;
-            top: 0%;
+            top: 1cqb;
         }
 
         .ad-space.right {
             right: 0;
-            top: 0%;
-        }
-
-        .content {
-            text-align: center;
-            /* Center-align text for aesthetic appearance */
+            top: 1%;
         }
     </style>
     <script>
-        function updateAds() {
-            const ads = document.querySelectorAll('.ad-space');
+        // Function to refresh an ad
+        function refreshAd(adContainerId, adSlot) {
+            const adContainer = document.getElementById(adContainerId);
+
+            // Clear the container
+            adContainer.innerHTML = '';
+
+            // Add new ad tag
+            const ins = document.createElement('ins');
+            ins.className = 'adsbygoogle';
+            ins.style = 'display:inline-block;width:160px;height:600px';
+            ins.setAttribute('data-ad-client', 'ca-pub-7845606961004033');
+            ins.setAttribute('data-ad-slot', adSlot);
+            adContainer.appendChild(ins);
+
+            // Reinitialize ads
+            (adsbygoogle = window.adsbygoogle || []).push({});
         }
-        // Update ads every 2 minutes
-        setInterval(updateAds, 2 * 60 * 1000);
-        window.onload = updateAds; // Initial ad load
+
+        // Refresh ads every 2 minutes (120,000 ms)
+        setInterval(() => {
+            refreshAd('leftAd', '3015903620');
+            refreshAd('rightAd', '3015903620');
+        }, 120000); // 2 minutes in milliseconds
     </script>
 </head>
 
 <body>
-    <div class="ad-space left">
-        <!-- Placeholder for AdSense Ad -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-     crossorigin="anonymous"></script>
-<!-- 180 x 700 ads -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:180px;height:700px"
-     data-ad-client="ca-pub-7845606961004033"
-     data-ad-slot="1009628362"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <div class="ad-space left" id="leftAd">
+        <!-- Initial Left Ad -->
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+            crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px"
+            data-ad-client="ca-pub-7845606961004033" data-ad-slot="3015903620"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="ad-space right">
-        <!-- Placeholder for AdSense Ad -->
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-     crossorigin="anonymous"></script>
-<!-- 200 x 600 ads -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:180px;height:700px"
-     data-ad-client="ca-pub-7845606961004033"
-     data-ad-slot="1009628362"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <div class="ad-space right" id="rightAd">
+        <!-- Initial Right Ad -->
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+            crossorigin="anonymous"></script>
+        <ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px"
+            data-ad-client="ca-pub-7845606961004033" data-ad-slot="3015903620"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <div class="container">
         <div class="content">
