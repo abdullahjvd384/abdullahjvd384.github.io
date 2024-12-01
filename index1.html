@@ -20,12 +20,14 @@
             margin: 0;
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
         }
 
         .container {
             display: flex;
-            align-items: center; /* Center ads and editor vertically */
+            align-items: center;
+            /* Center ads and editor vertically */
             justify-content: space-between;
             gap: 20px;
             max-width: 100%;
@@ -33,7 +35,8 @@
         }
 
         .ad-space {
-            flex-shrink: 0; /* Prevent shrinking of ads */
+            flex-shrink: 0;
+            /* Prevent shrinking of ads */
             width: 360px;
             height: 500px;
             background-color: #dcdcdc;
@@ -43,12 +46,15 @@
             align-items: center;
             font-size: 18px;
             color: #555;
+            position: relative;
         }
 
         .editor {
             flex-grow: 1;
-            min-width: 400px; /* Set a reasonable minimum width for the editor */
-            max-width: 600px; /* Prevent the editor from growing too wide */
+            min-width: 400px;
+            /* Set a reasonable minimum width for the editor */
+            max-width: 600px;
+            /* Prevent the editor from growing too wide */
             height: 500px;
             background-color: #fff;
             border: 1px solid #ccc;
@@ -101,6 +107,48 @@
             </script>
         </div>
     </div>
+
+    <script>
+        // Ad configuration
+        const adsConfig = {
+            client: "ca-pub-7845606961004033",
+            slot: "1009628362",
+            width: 360,
+            height: 500,
+        };
+
+        // Function to load ads dynamically
+        function loadAd(containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = ""; // Clear previous ad
+
+            const ad = document.createElement("ins");
+            ad.className = "adsbygoogle";
+            ad.style.display = "inline-block";
+            ad.style.width = `${adsConfig.width}px`;
+            ad.style.height = `${adsConfig.height}px`;
+            ad.setAttribute("data-ad-client", adsConfig.client);
+            ad.setAttribute("data-ad-slot", adsConfig.slot);
+
+            container.appendChild(ad);
+
+            // Trigger Google AdSense loader
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+
+        // Initial load
+        loadAd("left-ad");
+        loadAd("right-ad");
+
+        // Refresh ads every 90 seconds
+        setInterval(() => {
+            loadAd("left-ad");
+            loadAd("right-ad");
+        }, 90 * 1000);
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
