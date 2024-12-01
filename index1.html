@@ -1,127 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Editor </title>
+    <title>Text Editor with Ad Spaces</title>
     <style>
-        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Ensure no horizontal scrolling */
         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             margin: 0;
-            overflow-x: hidden;
-            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        /* Flexbox layout for the container */
         .container {
             display: flex;
-            justify-content: space-between; /* Space ads and editor evenly */
-            align-items: center;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            gap: 20px; /* Space between elements */
+            align-items: center; /* Center ads and editor vertically */
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 100%;
+            padding: 10px;
         }
 
-        /* Ad Space Style */
         .ad-space {
+            flex-shrink: 0; /* Prevent shrinking of ads */
             width: 360px;
             height: 500px;
-            border: 1px solid #bbb;
+            background-color: #dcdcdc;
+            border: 2px dashed #aaa;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 18px;
+            color: #555;
         }
 
-        /* Text Editor Style */
         .editor {
-            flex: 1; /* Expands to fill remaining space */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-grow: 1;
+            min-width: 400px; /* Set a reasonable minimum width for the editor */
+            max-width: 600px; /* Prevent the editor from growing too wide */
+            height: 500px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        textarea {
+        .editor textarea {
             width: 100%;
-            max-width: 800px;
-            height: 400px;
-            padding: 10px;
+            height: 100%;
+            border: none;
+            outline: none;
+            resize: none;
             font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            resize: none; /* Prevent resizing */
+            line-height: 1.5;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- Left Ad Space -->
         <div class="ad-space" id="left-ad">
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:360px;height:500px"
-                 data-ad-client="ca-pub-7845606961004033"
-                 data-ad-slot="1009628362"></ins>
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+                crossorigin="anonymous"></script>
+            <!-- 360 x 500 ads -->
+            <ins class="adsbygoogle" style="display:inline-block;width:360px;height:500px"
+                data-ad-client="ca-pub-7845606961004033" data-ad-slot="1009628362"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
 
         <!-- Text Editor -->
         <div class="editor">
-            <textarea id="text-editor" placeholder="Start typing here..."></textarea>
+            <textarea placeholder="Start typing here..."></textarea>
         </div>
 
         <!-- Right Ad Space -->
         <div class="ad-space" id="right-ad">
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:360px;height:500px"
-                 data-ad-client="ca-pub-7845606961004033"
-                 data-ad-slot="1009628362"></ins>
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+                crossorigin="anonymous"></script>
+            <!-- 360 x 500 ads -->
+            <ins class="adsbygoogle" style="display:inline-block;width:360px;height:500px"
+                data-ad-client="ca-pub-7845606961004033" data-ad-slot="1009628362"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-        crossorigin="anonymous"></script>
-    <script>
-        // Load ads initially
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        (adsbygoogle = window.adsbygoogle || []).push({});
-
-        // Function to refresh ads
-        function refreshAds() {
-            const leftAd = document.getElementById("left-ad");
-            const rightAd = document.getElementById("right-ad");
-
-            // Clear the previous ads
-            leftAd.innerHTML = '';
-            rightAd.innerHTML = '';
-
-            // Re-add the AdSense elements
-            leftAd.innerHTML = `
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:360px;height:500px"
-                     data-ad-client="ca-pub-7845606961004033"
-                     data-ad-slot="1009628362"></ins>`;
-            rightAd.innerHTML = `
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:360px;height:500px"
-                     data-ad-client="ca-pub-7845606961004033"
-                     data-ad-slot="1009628362"></ins>`;
-
-            // Re-initialize the ads
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        }
-
-        // Refresh ads every 1 minute
-        setInterval(refreshAds, 60000);
-    </script>
 </body>
+
 </html>
