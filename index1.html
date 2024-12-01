@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor </title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Ensure no horizontal scrolling */
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Flexbox layout for the container */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Space ads and editor evenly */
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px; /* Space between elements */
+        }
+
+        /* Ad Space Style */
+        .ad-space {
+            width: 360px;
+            height: 500px;
+            border: 1px solid #bbb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Text Editor Style */
+        .editor {
+            flex: 1; /* Expands to fill remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            resize: none; /* Prevent resizing */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Ad Space -->
+        <div class="ad-space" id="left-ad">
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:360px;height:500px"
+                 data-ad-client="ca-pub-7845606961004033"
+                 data-ad-slot="1009628362"></ins>
+        </div>
+
+        <!-- Text Editor -->
+        <div class="editor">
+            <textarea id="text-editor" placeholder="Start typing here..."></textarea>
+        </div>
+
+        <!-- Right Ad Space -->
+        <div class="ad-space" id="right-ad">
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:360px;height:500px"
+                 data-ad-client="ca-pub-7845606961004033"
+                 data-ad-slot="1009628362"></ins>
+        </div>
+    </div>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+        crossorigin="anonymous"></script>
+    <script>
+        // Load ads initially
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
+
+        // Function to refresh ads
+        function refreshAds() {
+            const leftAd = document.getElementById("left-ad");
+            const rightAd = document.getElementById("right-ad");
+
+            // Clear the previous ads
+            leftAd.innerHTML = '';
+            rightAd.innerHTML = '';
+
+            // Re-add the AdSense elements
+            leftAd.innerHTML = `
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:360px;height:500px"
+                     data-ad-client="ca-pub-7845606961004033"
+                     data-ad-slot="1009628362"></ins>`;
+            rightAd.innerHTML = `
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:360px;height:500px"
+                     data-ad-client="ca-pub-7845606961004033"
+                     data-ad-slot="1009628362"></ins>`;
+
+            // Re-initialize the ads
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
+
+        // Refresh ads every 1 minute
+        setInterval(refreshAds, 60000);
+    </script>
+</body>
+</html>
