@@ -4,90 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Editor with Ad Banner</title>
+    <title>Text Editor with Ad Space</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
             height: 100vh;
+            overflow: hidden; /* Prevents unnecessary scrollbars */
         }
 
-        .ad-banner {
-            position: sticky;
+        .ad-space {
+            position: fixed;
             top: 0;
+            left: 0;
             width: 100%;
-            height: 450px;
-            background-color: #f1f1f1;
+            height: 40%; /* Adjust height for slightly less than half */
+            background-color: #f9f9f9;
+            border-bottom: 2px solid #ccc;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-bottom: 2px solid #ccc;
-            z-index: 10;
+            z-index: 1000;
         }
 
         .editor-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
+            position: absolute;
+            top: 40%; /* Same as ad space height */
+            left: 0;
+            width: 100%;
+            height: 60%; /* Remaining space */
+            overflow: auto;
+            padding: 10px;
+            box-sizing: border-box; /* Ensures padding doesn't break layout */
         }
 
-        .text-editor {
-            flex: 1;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
+        textarea {
+            width: 100%;
+            height: 100%;
             resize: none;
+            border: 1px solid #ccc;
             outline: none;
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 10px;
+            box-sizing: border-box; /* Ensures padding doesn't break layout */
+            background-color: #fff;
+            color: #000; /* Adjust for readability */
         }
     </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Ad Banner -->
-        <div class="ad-banner">
-            <!-- Ad Container -->
-            <div id="adBanner">
-                <script async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
-                    crossorigin="anonymous"></script>
-                <!-- 1200_x_450_ads -->
-                <ins class="adsbygoogle" style="display:inline-block;width:1200px;height:450px"
-                    data-ad-client="ca-pub-7845606961004033" data-ad-slot="3015903620"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-        </div>
+    <!-- Ad Space -->
+    <div class="ad-space">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7845606961004033"
+            data-ad-slot="3015903620"
+            data-ad-format="auto"
+            data-full-width-responsive="true">
+        </ins>
+    </div>
 
-        <!-- Text Editor -->
-        <div class="editor-container">
-            <textarea class="text-editor" placeholder="Start typing here..."></textarea>
-        </div>
+    <!-- Text Editor -->
+    <div class="editor-container">
+        <textarea placeholder="Start typing here..."></textarea>
     </div>
 
     <script>
+        // Initialize Google AdSense
+        (adsbygoogle = window.adsbygoogle || []).push({});
+
         // Function to refresh AdSense ads
-        function refreshAd() {
-            const adBanner = document.getElementById('adBanner');
-            // Clear the current ad content
-            adBanner.innerHTML = `
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:1200px;height:450px"
-                     data-ad-client="ca-pub-7845606961004033"
-                     data-ad-slot="3015903620"></ins>
-            `;
-            // Reinitialize AdSense ads
-            (adsbygoogle = window.adsbygoogle || []).push({});
+        function refreshAds() {
+            const adElements = document.getElementsByClassName('adsbygoogle');
+            for (let ad of adElements) {
+                ad.innerHTML = ''; // Clear current ad
+                (adsbygoogle = window.adsbygoogle || []).push({}); // Reload ad
+            }
         }
 
-        // Refresh ads every 3 minutes
-        setInterval(refreshAd, 180000); // 3 minutes
+        // Refresh ads every 3 minutes (180,000 milliseconds)
+        setInterval(refreshAds, 180000);
     </script>
 </body>
 
