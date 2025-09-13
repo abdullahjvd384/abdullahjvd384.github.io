@@ -3,13 +3,11 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YVT5PQBZC"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-2YVT5PQBZC');
     </script>
     <meta charset="UTF-8">
@@ -22,16 +20,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845606961004033"
      crossorigin="anonymous"></script>
-<!-- Vertical Ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7845606961004033"
-     data-ad-slot="6185102492"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <!-- Exoclick Video Ad Script -->
+    <script type="text/javascript" src="https://s.magsrv.com/v1/vast.php?idzone=5721820"></script>
     <title>Online IT and Cybersecurity Education</title>
     <style>
         body {
@@ -79,11 +69,8 @@
             border-radius: 5px;
             position: sticky;
             top: 100px;
-            /* Adjusted top value to move sidebar down */
             height: calc(100vh - 100px);
-            /* Make sidebar occupy full viewport height minus the offset */
             overflow-y: auto;
-            /* Enable scrolling */
         }
 
         aside h2 {
@@ -118,11 +105,11 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
             margin-left: 20px;
-            /* Ensure the main content doesn't overlap the sidebar */
         }
 
         article {
             margin-bottom: 2rem;
+            position: relative;
         }
 
         article h2,
@@ -164,6 +151,53 @@
             border-top: 1px solid #ccc;
         }
 
+        /* Ad container styles */
+        .ad-container {
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+            min-height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f9f9;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .ad-label {
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .sticky-ad {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 250px;
+            z-index: 1000;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .close-ad {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
         /* Media query for mobile devices */
         @media (max-width: 768px) {
             .hamburger {
@@ -189,16 +223,36 @@
                 margin-left: 0;
                 padding: 1rem;
             }
+            
+            .sticky-ad {
+                width: 100%;
+                right: 0;
+            }
+            
+            .ad-container {
+                min-height: 200px;
+            }
         }
     </style>
 </head>
 
 <body>
-<!--     <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>  -->
- <ins class="eas6a97888e2" data-zoneid="5710426"></ins> 
- <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
-    <amp-auto-ads type="adsense" data-ad-client="ca-pub-7845606961004033">
-    </amp-auto-ads>
+    <!-- Vertical Ad -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7845606961004033"
+         data-ad-slot="6185102492"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+    <!-- Header Ad -->
+    <div class="ad-container">
+        <div id="exoclick-header-ad"></div>
+    </div>
+    
     <header>
         <h2 style="color: #fff;"><a href="https://abdullahjvd384.github.io/">View Blogs</a></h2>
         <h1>Online IT and Cybersecurity Education</h1>
@@ -229,8 +283,20 @@
                 <li><a href="blog14.html">How to Find the Best Accident Attorney Near You</a></li>
                 <li><a href="blog15.html">How to Start a Brand as a Developer</a></li>
             </ul>
+            
+            <!-- Sidebar Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-sidebar-ad"></div>
+            </div>
         </aside>
         <section>
+            <!-- In-content Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-content-ad-1"></div>
+            </div>
+            
             <article>
                 <ul>
                 <li><a href="blog1.html">Online IT and Cybersecurity Education</a></li>
@@ -256,20 +322,27 @@
                 <h2>The Ultimate Guide to Online IT and Cybersecurity Education</h2>
                 <p>The demand for skilled professionals in IT, programming, and cybersecurity has never been higher.
                     With advancements in technology and the rise of online education, aspiring tech enthusiasts now have
-                    access to some of the best educational resources available. In this blog, we’ll explore various
+                    access to some of the best educational resources available. In this blog, we'll explore various
                     options for earning an <strong>IT school online</strong> degree, enrolling in a <strong>programming
                         school online</strong>, or pursuing a <strong>cyber security degree online</strong>.</p>
             </article>
+            
+            <!-- In-content Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-content-ad-2"></div>
+            </div>
+            
             <article>
                 <h2>Why Choose Online IT and Cybersecurity Education?</h2>
-                <p>Online education offers unparalleled flexibility and accessibility. Whether you’re looking to
+                <p>Online education offers unparalleled flexibility and accessibility. Whether you're looking to
                     kickstart your tech career or advance your skills, programs like a <strong>computer science degree
                         online</strong> or <strong>cyber security classes online</strong> can fit your schedule and
                     budget while providing high-quality education.</p>
             </article>
             <article>
                 <h2>Exploring IT Schools Online</h2>
-                <p>If you’re new to the tech field, starting with an <strong>IT school online</strong> is an excellent
+                <p>If you're new to the tech field, starting with an <strong>IT school online</strong> is an excellent
                     option. These schools cover the fundamentals of information technology and provide a pathway to more
                     specialized fields like cybersecurity and programming.</p>
                 <ul>
@@ -278,6 +351,13 @@
                     <li>Cost-effective compared to traditional schools.</li>
                 </ul>
             </article>
+            
+            <!-- In-content Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-content-ad-3"></div>
+            </div>
+            
             <article>
                 <h2>Why a Cybersecurity Degree Online is a Game-Changer</h2>
                 <p>The cybersecurity field is booming, with high-paying job opportunities available across industries.
@@ -301,6 +381,13 @@
                     <li>Access to coding challenges and hackathons.</li>
                 </ul>
             </article>
+            
+            <!-- In-content Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-content-ad-4"></div>
+            </div>
+            
             <article>
                 <h2>Pursuing a Computer Science Degree Online</h2>
                 <p>A <strong>computer science degree online</strong> or a <strong>computer science bachelor degree
@@ -314,7 +401,7 @@
             </article>
             <article>
                 <h2>Specialized Computer Science Online Degree Programs</h2>
-                <p>If you’re interested in narrowing your focus, consider enrolling in <strong>computer science online
+                <p>If you're interested in narrowing your focus, consider enrolling in <strong>computer science online
                         degree programs</strong> tailored to specific career paths, such as software engineering, data
                     science, or cloud computing.</p>
                 <ul>
@@ -323,6 +410,13 @@
                     <li>Blockchain technology.</li>
                 </ul>
             </article>
+            
+            <!-- In-content Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-content-ad-5"></div>
+            </div>
+            
             <article>
                 <h2>Taking Cyber Security Classes Online</h2>
                 <p>For a quick dive into the cybersecurity field, <strong>cyber security classes online</strong> are an
@@ -337,10 +431,10 @@
             <article>
                 <h2>Choosing the Right Program for You</h2>
                 <p>When deciding between an <strong>IT school online</strong>, <strong>programming school
-                        online</strong>, or a <strong>cyber security degree online</strong>, it’s essential to consider
+                        online</strong>, or a <strong>cyber security degree online</strong>, it's essential to consider
                     your career goals. For example:</p>
                 <ul>
-                    <li>If you’re interested in software development, focus on <strong>programming schools
+                    <li>If you're interested in software development, focus on <strong>programming schools
                             online</strong>.</li>
                     <li>If cybersecurity excites you, explore <strong>cyber security schools online</strong> or
                         <strong>cyber security classes online</strong>.
@@ -348,20 +442,39 @@
                     <li>For a broader foundation, pursue a <strong>computer science degree online</strong>.</li>
                 </ul>
             </article>
+            
+            <!-- In-content Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-content-ad-6"></div>
+            </div>
+            
             <article>
                 <h2>Top Institutions Offering Online Tech Degrees</h2>
                 <p>Many prestigious institutions now offer online degrees in IT, cybersecurity, and computer science.
                     Some of the most popular programs include:</p>
                 <ul>
                     <li>Harvard Online for Computer Science.</li>
-                    <li>Stanford’s Online Programming School.</li>
-                    <li>MIT’s Cybersecurity Certification Programs.</li>
-                    <li>Coursera’s Specialized IT and Programming Courses.</li>
+                    <li>Stanford's Online Programming School.</li>
+                    <li>MIT's Cybersecurity Certification Programs.</li>
+                    <li>Coursera's Specialized IT and Programming Courses.</li>
                 </ul>
             </article>
+            
+            <!-- Bottom Ad -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <div id="exoclick-bottom-ad"></div>
+            </div>
         </section>
-
     </div>
+    
+    <!-- Sticky Bottom Ad -->
+    <div class="sticky-ad" id="sticky-ad">
+        <button class="close-ad" onclick="closeStickyAd()">×</button>
+        <div id="exoclick-sticky-ad"></div>
+    </div>
+    
     <footer>
         <b>
             <p>The world of online IT and cybersecurity education is rich with opportunities. Whether you choose an
@@ -370,7 +483,14 @@
                 high-paying and fulfilling careers in tech.
             </p>
         </b>
+        
+        <!-- Footer Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <div id="exoclick-footer-ad"></div>
+        </div>
     </footer>
+    
     <script>
         function toggleSidebar() {
             var sidebar = document.getElementById("sidebar");
@@ -380,10 +500,49 @@
                 sidebar.style.display = "block";
             }
         }
+        
+        function closeStickyAd() {
+            document.getElementById('sticky-ad').style.display = 'none';
+        }
+        
+        // Function to initialize Exoclick ads
+        function initExoclickAds() {
+            // Array of ad container IDs
+            const adContainers = [
+                'exoclick-header-ad',
+                'exoclick-sidebar-ad',
+                'exoclick-content-ad-1',
+                'exoclick-content-ad-2',
+                'exoclick-content-ad-3',
+                'exoclick-content-ad-4',
+                'exoclick-content-ad-5',
+                'exoclick-content-ad-6',
+                'exoclick-bottom-ad',
+                'exoclick-sticky-ad',
+                'exoclick-footer-ad'
+            ];
+            
+            // Initialize each ad container
+            adContainers.forEach(containerId => {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    // Create iframe for each ad container
+                    const iframe = document.createElement('iframe');
+                    iframe.src = 'https://s.magsrv.com/v1/vast.php?idzone=5721820';
+                    iframe.width = '100%';
+                    iframe.height = '100%';
+                    iframe.frameBorder = '0';
+                    iframe.scrolling = 'no';
+                    container.appendChild(iframe);
+                }
+            });
+        }
+        
+        // Initialize ads when page loads
+        window.onload = function() {
+            initExoclickAds();
+        };
     </script>
 </body>
 
 </html>
-
-
-
