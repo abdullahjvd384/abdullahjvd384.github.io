@@ -1,0 +1,14 @@
+/* Mobile-first responsive tweaks and touch targets */
+button, a, input[type="button"], input[type="submit"]{min-height:44px}
+
+.hamburger{display:inline-block}
+.main-nav{display:none}
+
+@media(min-width:768px){
+  .hamburger{display:none}
+  .main-nav{display:flex}
+}
+
+.featured-secondary{flex-direction:row}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
