@@ -1,0 +1,1436 @@
+[
+  {
+    "type": "gotoUrl",
+    "config": {
+      "url": "https://www.google.com/search?q=AmericaPolicy+Insurance+Legal+Mortgage+Banking+Finance&sxsrf=AE3TifNtlcn-2MOxYCn97gyldXWSj9aMsg%3A1767099095238",
+      "timeout": 30000,
+      "remark": "Open Google search for AmericaPolicy"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for page to load"
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "https://abdullahjvd384.github.io",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Click on Abdullah GVD GitHub URL"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for website to open"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Cheap Car Insurance Quotes: Best Rates & Coverage Guide 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 1: Click on auto insurance article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Homeowners Insurance Quotes: Best Rates & Coverage Guide 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 2: Click on homeowners insurance article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Life Insurance Quotes: Term vs Whole Life Rates & Cost 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 3: Click on life insurance article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Health Insurance Open Enrollment 2025: ACA Plans & Deadlines",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 4: Click on health insurance article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "How to Lower Car Insurance: 12 Ways to Get Cheap Auto Insurance",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 5: Click on how to lower car insurance article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Personal Injury Lawyer: Find Best Accident Attorney Near You",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 6: Click on personal injury lawyer article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Criminal Defense Attorney Cost: DUI Lawyer Fees & Rates 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 7: Click on criminal defense attorney article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Business Formation Attorney: LLC vs S-Corp Setup Cost & Guide",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 8: Click on business formation attorney article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Mortgage Refinance Rates Today: Best Lenders & Calculator 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 9: Click on mortgage refinance article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "SBA Loan Application: SBA 7(a) Requirements & Approval Guide",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 10: Click on SBA loan article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "FHA vs Conventional Loan: Requirements, Rates & Calculator 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 11: Click on FHA vs Conventional loan article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Business Line of Credit: Best Rates & Approval Guide 2025",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 12: Click on business line of credit article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Retirement Planning in Your 30s: 401k, IRA & Investment Guide",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 13: Click on retirement planning article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait for home page to load"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of home page",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "Best Index Funds 2025: Top S&P 500 ETFs & Vanguard Funds",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Article 14: Click on best index funds article"
+    }
+  },
+  {
+    "type": "waitTime",
+    "config": {
+      "timeoutType": "fixedValue",
+      "timeout": 5000,
+      "timeoutMin": 1000,
+      "timeoutMax": 300000,
+      "remark": "Wait 5 seconds to load article page"
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "bottom",
+      "remark": "Scroll to bottom of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of article",
+      "randomWheelDistance": [20, 22],
+      "randomWheelSleepTime": [90, 100]
+    }
+  },
+  {
+    "type": "click",
+    "config": {
+      "selectorRadio": "TEXT",
+      "selector": "AmericaPolicy",
+      "selectorType": "selector",
+      "element": "",
+      "serialType": "fixedValue",
+      "serial": 1,
+      "serialMin": 1,
+      "serialMax": 50,
+      "button": "left",
+      "type": "click",
+      "remark": "Go back to home page - Automation complete"
+    }
+  }
+]
