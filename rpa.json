@@ -55,8 +55,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -97,8 +113,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -113,8 +129,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -155,8 +171,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -197,8 +229,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -213,8 +245,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -255,8 +287,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -297,8 +345,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -313,8 +361,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -355,8 +403,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -397,8 +461,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -413,8 +477,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -455,8 +519,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -497,8 +577,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -513,8 +593,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -555,8 +635,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -597,8 +693,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -613,8 +709,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -655,8 +751,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -697,8 +809,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -713,8 +825,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -755,8 +867,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -797,8 +925,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -813,8 +941,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -855,8 +983,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -897,8 +1041,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -913,8 +1057,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -955,8 +1099,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -997,8 +1157,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1013,8 +1173,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1055,8 +1215,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1097,8 +1273,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1113,8 +1289,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1155,8 +1331,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1197,8 +1389,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1213,8 +1405,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1255,8 +1447,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1297,8 +1505,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1313,8 +1521,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1355,8 +1563,24 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of home page",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
+    }
+  },
+  {
+    "type": "scrollPage",
+    "config": {
+      "rangeType": "window",
+      "selectorRadio": "CSS",
+      "selector": "",
+      "serial": 1,
+      "distance": 0,
+      "type": "smooth",
+      "scrollType": "position",
+      "position": "top",
+      "remark": "Scroll back to top of home page",
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1397,8 +1621,8 @@
       "scrollType": "position",
       "position": "bottom",
       "remark": "Scroll to bottom of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
@@ -1413,8 +1637,8 @@
       "scrollType": "position",
       "position": "top",
       "remark": "Scroll back to top of article",
-      "randomWheelDistance": [20, 22],
-      "randomWheelSleepTime": [50, 60]
+      "randomWheelDistance": [20, 30],
+      "randomWheelSleepTime": [20, 30]
     }
   },
   {
